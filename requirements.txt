@@ -1,0 +1,6 @@
+#O arquivo é ideal para instalar todas as bibliotecas juntas
+pandas==2.2.3
+streamlit==1.44.1 #Biblioteca python famosa para criar dashboards, quanto protótipos. Não precisa ter muito conhecimento em front e vai ter uma página bonita
+plotly==5.24.1
+
+#código para rodar o arquivo: pip install -r requirements.txt (O -r diz que vai percorrer todas as linhas instalando, caso não tenha, instala apenas a linha 1)
