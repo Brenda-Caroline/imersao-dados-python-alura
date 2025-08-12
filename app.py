@@ -87,7 +87,7 @@ with col_graf1:
             top_cargos,
             x='usd',
             y='cargo',
-            #orientation='h', #Horizontal, se for deixar na vertical, pode deixar sem nada
+            orientation='h', #Horizontal, se for deixar na vertical, pode deixar sem nada
             color= 'cargo',
             color_discrete_sequence=px.colors.qualitative.Pastel,
             title="Top 10 cargos por salário médio",
