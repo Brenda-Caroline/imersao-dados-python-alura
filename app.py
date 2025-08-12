@@ -12,7 +12,7 @@ st.set_page_config(
 )
 
 # --- Carregamento dos dados ---
-df = pd.read_csv("https://raw.githubusercontent.com/vqrca/dashboard_salarios_dados/refs/heads/main/dados-imersao-final.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/Brenda-Caroline/imersao-dados-python-alura/refs/heads/main/dados-imersao-final.csv")
 
 # --- Barra Lateral (Filtros) ---
 #Para um dashboard é ideal ter um espaço para filtros, pois consegue filtrar os dados apenas por um ano, apenas por uma senioridade por exemplo
@@ -87,9 +87,9 @@ with col_graf1:
             top_cargos,
             x='usd',
             y='cargo',
-            orientation='h', #Horizontal, se for deixar na vertical, pode deixar sem nada
+            #orientation='h', #Horizontal, se for deixar na vertical, pode deixar sem nada
             color= 'cargo',
-            color_discrete_sequence=px.colors.qualitative.Set2,
+            color_discrete_sequence=px.colors.qualitative.Pastel,
             title="Top 10 cargos por salário médio",
             labels={'usd': 'Média salarial anual (USD)', 'cargo': ''}
         )
@@ -128,7 +128,9 @@ with col_graf3:
             names='tipo_trabalho',
             values='quantidade',
             title='Proporção dos tipos de trabalho',
-            hole=0.5
+            hole=0.5,
+            color= 'tipo_trabalho',
+            color_discrete_sequence=px.colors.qualitative.Pastel,
         )
         grafico_remoto.update_traces(textinfo='percent+label')
         grafico_remoto.update_layout(title_x=0.1)
